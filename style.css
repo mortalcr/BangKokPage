@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #FFF;
 }
 .Bangkokimg {
@@ -66,30 +67,14 @@ p {
   border-radius: 50px;
 }
 .templeImagen{
-  width: 400px;
-  height: 550px;
+  width: 25em;
+  height: 40em;
   margin: 50px;
   border-radius: 25px;
 }
 .presentacion{
   max-width: 20em;
   font-family: 'Times New Roman';
-}
-@media (max-width: 768px){
-  .NavBar {
-    flex-direction: column;
-  }
-  .NavBar li a{
-    padding: 6px 8px;
-  }
-  .templeImagen{
-    width: 200px;
-    height: 300px;
-  }
-  .cartapresentacion{
-    flex-direction: column;
-    height: 80vh;
-  }
 }
 .fondo{
   height: 100vh;
@@ -105,7 +90,7 @@ p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #3339;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -139,6 +124,52 @@ p {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+@media (max-width: 810px){
+  .NavBar {
+    flex-direction: column;
+  }
+  .NavBar li a{
+    padding: 6px 8px;
+  }
+  .templeImagen{
+    width: 200px;
+    height: 300px;
+  }
+  .cartapresentacion{
+    flex-direction: column;
+    height: 80vh;
+  }
+  .presentacion{
+    font-size: 2rem;
+  }
+  .supText{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px){
+  .NavBar {
+    flex-direction: column;
+  }
+  .NavBar li a{
+    padding: 6px 8px;
+  }
+  .templeImagen{
+    width: 200px;
+    height: 300px;
+  }
+  .cartapresentacion{
+    flex-direction: column;
+    height: 80vh;
+  }
+  .presentacion{
+    font-size: 0.8em;
+  }
+  .supText{
+    font-size: 2em;
+  }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
